@@ -132,13 +132,14 @@ REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticatedOrReadOnly',
     ),
-    'EXCEPTION_HANDLER': 'truecaller.core.exceptions.core_exception_handler',
+    'EXCEPTION_HANDLER': 'core.exceptions.core_exception_handler',
     'NON_FIELD_ERRORS_KEY': 'error',
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'truecaller.accounts.backends.JWTAuthentication',
+        'accounts.backends.JWTAuthentication',
     ),
     'DEFAULT_PARSER_CLASSES': (
-        'rest_framework.parsers.JSONParser'
+        'rest_framework.parsers.JSONParser',
+        'rest_framework.parsers.MultiPartParser',
     ),
 }
 
