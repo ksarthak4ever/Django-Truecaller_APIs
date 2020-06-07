@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     # Local
     'core',
     'accounts',
+    'contacts',
 ]
 
 MIDDLEWARE = [

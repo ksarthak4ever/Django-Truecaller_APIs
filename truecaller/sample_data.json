@@ -1,0 +1,130 @@
+{
+    "user" : {
+        "name": "Sarthak Kumar",
+        "email": "kumarsarthak800@gmail.com",
+        "phone_number": "7754938370",
+        "password": "testing123"
+      },
+    "contacts": [
+      {
+        "name": "Knapp Berry",
+        "email": "knappberry@unq.com",
+        "phone_number": "7251827182"
+      },
+      {
+        "name": "Bell Burgess",
+        "email": "bellburgess@unq.com",
+        "phone_number": "9271124112"
+      },
+      {
+        "name": "Hobbs Ferrell",
+        "email": "hobbsferrell@unq.com",
+        "phone_number": "+1(862)581-3022"
+      },
+      {
+        "name": "Marylou Medina",
+        "email": "maryloumedina@unq.com",
+        "phone_number": "+1(996)520-2967"
+      },
+      {
+        "name": "Larson Guerra",
+        "email": "larsonguerra@unq.com",
+        "phone_number": "+1(972)566-2684"
+      },
+      {
+        "name": "Shelby Ballard",
+        "email": "shelbyballard@unq.com",
+        "phone_number": "+1(824)467-3579"
+      },
+      {
+        "name": "Lea Faulkner",
+        "email": "leafaulkner@unq.com",
+        "phone_number": "+1(899)528-3402"
+      },
+      {
+        "name": "Cecelia Wolf",
+        "email": "ceceliawolf@unq.com",
+        "phone_number": "+1(862)507-3140"
+      },
+      {
+        "name": "Melva Nixon",
+        "email": "melvanixon@unq.com",
+        "phone_number": "+1(901)444-3081"
+      },
+      {
+        "name": "Bernard Chambers",
+        "email": "bernardchambers@unq.com",
+        "phone_number": "+1(831)539-3366"
+      },
+      {
+        "name": "Wendi Bender",
+        "email": "wendibender@unq.com",
+        "phone_number": "+1(868)414-2720"
+      },
+      {
+        "name": "Wall Stewart",
+        "email": "wallstewart@unq.com",
+        "phone_number": "+1(814)558-3191"
+      },
+      {
+        "name": "Howell Gilbert",
+        "email": "howellgilbert@unq.com",
+        "phone_number": "+1(926)512-3631"
+      },
+      {
+        "name": "Nguyen Maxwell",
+        "email": "nguyenmaxwell@unq.com",
+        "phone_number": "+1(838)469-2152"
+      },
+      {
+        "name": "Norris Hendricks",
+        "email": "norrishendricks@unq.com",
+        "phone_number": "+1(818)563-2900"
+      },
+      {
+        "name": "Salinas Mcleod",
+        "email": "salinasmcleod@unq.com",
+        "phone_number": "+1(888)413-3775"
+      },
+      {
+        "name": "Michelle Barrett",
+        "email": "michellebarrett@unq.com",
+        "phone_number": "+1(988)446-2594"
+      },
+      {
+        "name": "Burke Barlow",
+        "email": "burkebarlow@unq.com",
+        "phone_number": "+1(965)492-2552"
+      },
+      {
+        "name": "Rosie Cummings",
+        "email": "rosiecummings@unq.com",
+        "phone_number": "+1(845)456-2237"
+      },
+      {
+        "name": "Sanford Frye",
+        "email": "sanfordfrye@unq.com",
+        "phone_number": "+1(936)581-3494"
+      },
+      {
+        "name": "Janna Peck",
+        "email": "jannapeck@unq.com",
+        "phone_number": "+1(824)512-2437"
+      },
+      {
+        "name": "Lorraine Sykes",
+        "email": "lorrainesykes@unq.com",
+        "phone_number": "+1(959)422-3635"
+      },
+      {
+        "name": "Vicki Fulton",
+        "email": "vickifulton@unq.com",
+        "phone_number": "+1(916)455-2402"
+      },
+      {
+        "name": "Massey Moody",
+        "email": "masseymoody@unq.com",
+        "phone_number": "+1(840)453-3811"
+      }
+    ]
+}
