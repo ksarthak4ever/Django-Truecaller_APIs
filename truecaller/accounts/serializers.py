@@ -29,7 +29,8 @@ class UserRegisterSerializer(ModelSerializer):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        for field in self.fields:  # Iterate over the serializer fields.
+        for field in self.fields:  
+            # Iterate over the serializer fields.
             # Set the custom error message.
             self.fields[field].error_messages['required'] = \
                 f'Field `{field}` is required for `user` data.'
