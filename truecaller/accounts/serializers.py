@@ -40,7 +40,7 @@ class UserRegisterSerializer(ModelSerializer):
         # or response, including fields specified explicitly above.
         fields = (
             'id', 'u_id', 'name', 'phone_number', 'email', 'password',
-            'token',
+            'spam_count', 'token',
         )
 
     def create(self, validated_data):
@@ -99,5 +99,6 @@ class UserLoginSerializer(Serializer):
 
         return dict(
             id_=user.id, u_id=user.u_id, name=user.name,
-            phone_number=user.phone_number, email=user.email, token=user.token,
+            phone_number=user.phone_number, email=user.email, 
+            spam_count=user.spam_count, token=user.token,
         )

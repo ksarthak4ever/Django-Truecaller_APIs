@@ -19,7 +19,8 @@ class User(AbstractBaseUser, PermissionsMixin):
     name = models.CharField(max_length=255)
     # as phone number can be max 15 digits globally and must be unique
     phone_number = models.CharField(max_length=15, unique=True)
-    email = models.EmailField(max_length=255, null=True, blank=True)
+    email = models.EmailField(max_length=75, null=True, blank=True)
+    spam_count = models.IntegerField(default=0)
     is_superuser = models.BooleanField(default=False)
     is_staff = models.BooleanField(default=False)
 

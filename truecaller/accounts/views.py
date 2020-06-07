@@ -3,7 +3,6 @@ from django.conf import settings
 from django.contrib.auth import authenticate
 from django.core.exceptions import ObjectDoesNotExist
 
-
 # DRF imports.
 from rest_framework.views import APIView
 from rest_framework.response import Response
@@ -12,7 +11,6 @@ from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework import status
 
 # App imports.
-# from olympia.core.utils import validate_uuid4
 from accounts.models import User
 from accounts.serializers import (
     UserRegisterSerializer, UserLoginSerializer
@@ -31,7 +29,7 @@ class UserRegisterView(APIView):
     	phone_number = req_data.get('phone_number', None)
     	if User.objects.filter(phone_number=phone_number).exists():
     		return Response(
-    			"User with this phone number already exists",
+    			data="User with this phone number already exists",
     			status=status.HTTP_400_BAD_REQUEST
     		)
     	user_serializer = UserRegisterSerializer(data=req_data)
