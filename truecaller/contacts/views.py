@@ -57,11 +57,11 @@ class SetSpamContactView(APIView):
 			return Response(data=serializer.data, status=status.HTTP_200_OK)
 
 		elif personal_contacts_qs.exists():
-			# if number belongs to a user or users contact
-			personal_contact_obj = personal_contacts_qs.first()
-			personal_contact_obj.spam_count += 1
-			personal_contact_obj.save()
-			serializer = PersonalContactsSerializer(personal_contact_obj)
+			# if number belongs to a user or user's contact
+			for contact in personal_contacts_qs:
+				contact.spam_count += 1
+				contact.save()
+			serializer = PersonalContactsSerializer(personal_contacts_qs, many=True)
 			return Response(data=serializer.data, status=status.HTTP_200_OK)
 
 		else:
