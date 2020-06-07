@@ -6,7 +6,7 @@ from accounts.models import User
 from contacts.models import PersonalContacts
 
 
-class UserModelSerializer(serializers.ModelSerializer):
+class UserContactSerializer(serializers.ModelSerializer):
     
     class Meta:
         model = User

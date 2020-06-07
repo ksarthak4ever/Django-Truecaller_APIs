@@ -11,7 +11,7 @@ from rest_framework import status
 from accounts.models import User
 from contacts.models import PersonalContacts
 from contacts.serializers import (
-	UserModelSerializer,
+	UserContactSerializer,
 	PersonalContactsSerializer
 )
 from contacts.utils import (
@@ -48,12 +48,12 @@ class SetSpamContactView(APIView):
 			if request.user == registered_user_obj:
 				# as a registered user can't report themselves as spam
 				return Response(
-					data="Registered Users can't set themselves as spam",
+					data="Registered users can't report themselves as spam",
 					status=status.HTTP_400_BAD_REQUEST
 				)
 			registered_user_obj.spam_count += 1
 			registered_user_obj.save()
-			serializer = UserModelSerializer(registered_user_obj)
+			serializer = UserContactSerializer(registered_user_obj)
 			return Response(data=serializer.data, status=status.HTTP_200_OK)
 
 		elif personal_contacts_qs.exists():
@@ -111,7 +111,7 @@ class UserDetailProfileView(APIView):
 		registered_user_qs = User.objects.filter(id=user_id)
 		if registered_user_qs.exists():
 			searched_user_obj = registered_user_qs.first()
-			searched_user_serializer = UserModelSerializer(searched_user_obj)
+			searched_user_serializer = UserContactSerializer(searched_user_obj)
 			final_data = searched_user_serializer.data
 
 			# checking if selected user is registered
